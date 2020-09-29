@@ -1,4 +1,6 @@
 /*
+Operador Ternário:
+
 condição ? se for verdade faça isso : se for falso faça isso;
     SomaX ? x+1 : x-1;
 */
