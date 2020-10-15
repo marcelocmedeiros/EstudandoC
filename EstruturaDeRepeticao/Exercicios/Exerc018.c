@@ -11,15 +11,21 @@ int main () {
     for (i = 1; i <= num; i++) 
     {
         printf ("\nDigite o %d numero:\n> ", i);
-        scanf ("%f", &digitado);
+        scanf ("%d", &digitado);
         
         if (digitado >= maior) 
         {
-            maior = digitado;                                   
-        }
+            maior = digitado;
+            if (digitado == maior)
+            {
+                vezes ++;
+            }                                                       
+        }        
+        
+        
     }
-    printf ("\nO maior numero eh: %.2f.", maior);
-   //printf ("\nO maior foi lido %d vez(es).", vezes);
+    printf ("\nO maior numero eh: %d", maior);
+    printf ("\nO maior foi lido %d vez(es).", vezes);
 
     return 0;    
 }
